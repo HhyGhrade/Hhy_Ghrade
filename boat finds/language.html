@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boat finds Language Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .language-selector {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            max-width: 300px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Select Your Language</h1>
+    
+    <div class="language-selector">
+        <label for="languages">Choose a language:</label>
+        <select id="languages" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Spanish (Español)</option>
+            <option value="fr">French (Français)</option>
+            <option value="de">German (Deutsch)</option>
+            <option value="zh">Chinese (中文)</option>
+            <option value="ja">Japanese (日本語)</option>
+            <option value="hi">Hindi (हिंदी)</option>
+            <option value="ar">Arabic (العربية)</option>
+            <option value="ru">Russian (Русский)</option>
+        </select>
+    </div>
+
+    <p id="greeting">Welcome! Select your language.</p>
+
+    <script>
+        function changeLanguage() {
+            const languageSelect = document.getElementById("languages");
+            const selectedLanguage = languageSelect.value;
+            const greeting = document.getElementById("greeting");
+
+            switch (selectedLanguage) {
+                case "es":
+                    greeting.innerText = "¡Bienvenido! Selecciona tu idioma.";
+                    break;
+                case "fr":
+                    greeting.innerText = "Bienvenue! Sélectionnez votre langue.";
+                    break;
+                case "de":
+                    greeting.innerText = "Willkommen! Wählen Sie Ihre Sprache.";
+                    break;
+                case "zh":
+                    greeting.innerText = "欢迎！选择你的语言。";
+                    break;
+                case "ja":
+                    greeting.innerText = "ようこそ！言語を選択してください。";
+                    break;
+                case "hi":
+                    greeting.innerText = "स्वागत है! अपनी भाषा चुनें।";
+                    break;
+                case "ar":
+                    greeting.innerText = "أهلاً! اختر لغتك.";
+                    break;
+                case "ru":
+                    greeting.innerText = "Добро пожаловать! Выберите ваш язык.";
+                    break;
+                default:
+                    greeting.innerText = "Welcome! Select your language.";
+            }
+        }
+    </script>
+
+</body>
+</html>

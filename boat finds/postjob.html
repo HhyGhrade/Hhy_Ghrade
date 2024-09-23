@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boateng - Post a Job</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="background.png" alt="Boat Finds Logo" class="logo">
+        <h1>Post a Job</h1>
+    </header>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="post-job.html"><i class="fas fa-briefcase"></i> Post a Job</a></li>
+                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-content">
+            <h2>Post a New Job</h2>
+            <form id="postJobForm">
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+                <label for="jobDescription">Job Description:</label>
+                <textarea id="jobDescription" name="jobDescription" rows="5" required></textarea>
+                <label for="jobLocation">Location:</label>
+                <input type="text" id="jobLocation" name="jobLocation" required>
+                <label for="jobType">Job Type:</label>
+                <select id="jobType" name="jobType" required>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="contract">Contract</option>
+                </select>
+                <button type="submit">Post Job</button>
+            </form>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

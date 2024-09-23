@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boateng - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="boateng logo.png" alt="Boat Finds Logo" class="logo">
+            <h1>Welcome to Boateng Job Finds</h1>
+            <nav>
+                <a href='login.html'>Log In</a>
+                <a href='register.html'>Register</a>
+                <a href="language.html">Language</a>
+            </nav>
+        </div>
+        <header>
+            <!-- Other header content -->
+            <div class="language-selector">
+                <label for="languages">Choose a language:</label>
+                <select id="languages" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="es">Spanish (Español)</option>
+                    <option value="fr">French (Français)</option>
+                    <option value="de">German (Deutsch)</option>
+                    <option value="zh">Chinese (中文)</option>
+                    <option value="ja">Japanese (日本語)</option>
+                    <option value="hi">Hindi (हिंदी)</option>
+                    <option value="ar">Arabic (العربية)</option>
+                    <option value="ru">Russian (Русский)</option>
+                </select>
+            </div>
+            <!-- Other header content -->
+        </header>
+        <script src="languajs"></script>
+        
+        
+    </header>
+
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu" id="menu">
+        <h2>HIRE A PERSON</h2>
+        <ul>
+            <li><a href='loginp&b.html'>By Skills</a></li>
+            <li><a href='loginp&b.html'>By Location</a></li>
+            <li><a href='loginp&b.html'>By Category</a></li>
+        </ul>
+
+        <h2>FIND WORK</h2>
+        <ul>
+            <li><a href='loginp&b.html'>By Skills</a></li>
+            <li><a href='loginp&b.html'>By Location</a></li>
+            <li><a href='loginp&b.html'>By Category</a></li>
+        </ul>
+    </div>
+
+    <main>
+   
+        <section class="hero">
+            <h2>Your Gateway to Top Jobs</h2>
+            <p>Find and apply for your dream job with ease. Whether you're a job seeker or an employer, Boateng Finds connects you with the best opportunities.</p>
+            <div class="buttons">
+                <a class="btn" href='loginp&b.html'>Browse Jobs</a>
+                <a class="btn" href='loginp&b.html'>Post A Job</a>
+            </div>
+        </section>
+
+      
+        <section class="categories">
+            <h2>Explore Job Categories</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="tech.jpg" alt="Tech Jobs">
+                    <h3>Technology</h3>
+                    <p>Discover top tech roles like software developers, IT specialists, and more.</p>
+                </div>
+                <div class="category-item">
+                    <img src="des.jpg" alt="Design Jobs">
+                    <h3>Design</h3>
+                    <p>Creative opportunities for graphic designers, UX/UI experts, and artists.</p>
+                </div>
+                <div class="category-item">
+                    <img src="mark.jpg" alt="Marketing Jobs">
+                    <h3>Marketing</h3>
+                    <p>Find roles in digital marketing, content creation, SEO, and more.</p>
+                </div>
+                <div class="category-item">
+                    <img src="fin.jpg" alt="Finance Jobs">
+                    <h3>Finance</h3>
+                    <p>Opportunities for finance professionals, accountants, and auditors.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <h3>1. Register</h3>
+                    <p>Create an account with us and start exploring job opportunities or post a job listing.</p>
+                </div>
+                <div class="testimonial-item">
+                    <h3>2. Search & Apply</h3>
+                    <p>Use our powerful search tools to find jobs that match your skills and preferences.</p>
+                </div>
+                <div class="testimonial-item">
+                    <h3>3. Get Hired</h3>
+                    <p>Connect with top employers and start your next career journey.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Boateng Finds helped me land my dream job in just two weeks! The platform is easy to use and full of opportunities."</p>
+                    <h4>- John Doe</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"As a recruiter, Boateng Finds is my go-to site for finding top freelancers. I've hired many talented professionals here."</p>
+                    <h4>- Jane Smith</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"A fantastic platform for both job seekers and employers. Highly recommended for anyone looking to advance their career."</p>
+                    <h4>- Alex Brown</h4>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive the latest job postings and news straight to your inbox.</p>
+            <form action="/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+            <p>&copy; 2024 Boateng. Connecting Talent Across Borders.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

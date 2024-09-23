@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boateng  - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="background.png" alt="Boat Finds Logo" class="logo">
+        <h1>Profile</h1>
+    </header>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="post-job.html"><i class="fas fa-briefcase"></i> Post a Job</a></li>
+                <li><a href="my-jobs.html"><i class="fas fa-list"></i> My Jobs</a></li>
+                <li><a href="applications.html"><i class="fas fa-folder"></i> My Applications</a></li>
+                <li><a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-content">
+            <h2>My Profile</h2>
+            <form id="profileForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" value="[User's Name]" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="[User's Email]" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Update Profile</button>
+            </form>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

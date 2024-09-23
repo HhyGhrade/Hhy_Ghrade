@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boateng Finds - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="background.png" alt="Boat Finds Logo" class="logo">
+        <h1>WELCOME CHERISHED USER!!!</h1>
+        <h2>Please log in to post and browse jobs on Boateng Job Finds</h2>
+        
+        <div class="language-selector">
+            <label for="languages">Choose a language:</label>
+            <select id="languages" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="es">Spanish (Español)</option>
+                <option value="fr">French (Français)</option>
+                <option value="de">German (Deutsch)</option>
+                <option value="zh">Chinese (中文)</option>
+                <option value="ja">Japanese (日本語)</option>
+                <option value="hi">Hindi (हिंदी)</option>
+                <option value="ar">Arabic (العربية)</option>
+                <option value="ru">Russian (Русский)</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <section class="login-section">
+                <form id="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit"><a href="home.html" class="btn">Login</a></button> 
+                </form>
+                
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </section>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Choose Boat Finds?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Access to Top Jobs</h3>
+                    <p>Find and apply to the best job opportunities available worldwide.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Post Jobs for Free</h3>
+                    <p>Employers can easily post job listings for free and attract top talent.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Safe & Secure</h3>
+                    <p>We prioritize your privacy and ensure a secure platform for job seekers and employers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-item">
+                    <p>"Boat Finds helped me land my dream job within days!"</p>
+                    <h4>– Sarah Johnson, Developer</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"An incredible platform for finding reliable freelancers quickly."</p>
+                    <h4>– Mark Evans, Business Owner</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="links">
+            <h2>Helpful Links</h2>
+            <ul>
+                <li><a href="about.html">Learn more about Boat Finds</a></li>
+                <li><a href="faq.html">Frequently Asked Questions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Boateng. Connecting Talent Across Borders.</p>
+</footer>
+
+    <script src="language.js"></script>
+</body>
+</html>

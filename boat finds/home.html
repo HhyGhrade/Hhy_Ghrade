@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boateng  - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="background.png" alt="Boat Finds Logo" class="logo">
+        <h1>Welcome to boateng Job Finds</h1>
+        <nav>
+            <a href="jobs.html">Browse Jobs</a>
+            <a href="contact.html">Contact Us</a>
+
+        
+        </nav>
+    </header>
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<div class="menu" id="menu">
+    <h2>HIRE A PERSON</h2>
+    <ul>
+      <li><a href="skills.html"> By Skills </a></li>
+      <li><a href="location.html"> By Location </a></li>
+      <li><a href="category.html"> By Category </a></li>
+    </ul>
+
+    <h2>FIND WORK</h2>
+    <ul>
+      <li><a href="skills.html"> By Skills </a></li>
+      <li><a href="location.html"> By Location </a></li>
+      <li><a href="category.html"> By Category </a></li>
+    </ul>
+
+   
+</div>
+
+    <main>
+        <section class="hero">
+            <h2>Your Gateway to Top Jobs</h2>
+            <p>Find and apply for your dream job with ease. Whether you're a job seeker or an employer, Boat Finds connects you with the best opportunities.</p>
+            <div class="buttons">
+                <a class="btn" href='jobs.html'>Browse Jobs</a>
+                <a class="btn" href='postjob.html'>Post A Job</a>
+            </div>
+        </section>
+    
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Boateng. Connecting Talent Across Borders.</p>
+</footer>
+    <script>
+        function toggleMenu() {
+           var menu = document.getElementById('menu');
+           menu.classList.toggle('show');
+        }
+    </script>
+    </body>
+</html>
